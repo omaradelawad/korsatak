@@ -1,0 +1,88 @@
+*{
+    padding: 0; margin: 0; 
+    box-sizing: border-box;
+    color: rgb(29, 144, 190); 
+    font-family: sans-serif ;
+} 
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh ;  
+    flex-direction: column; 
+} 
+.image{
+    position: relative; 
+    width: 200px ;
+}
+img{
+    width: 200px ; 
+    animation: logo 1s    ;
+} 
+.image::after{
+    content: '';
+    position: absolute ; 
+    width: 100% ;
+    height: 2px ; 
+    background-color: gray ; 
+    bottom: 0 ; 
+    left: 0 ;  
+   animation: ahmed 1s  forwards  ;
+} 
+h1{
+    margin: 10px 0 ;  
+    animation: text 1s  forwards ;
+}  
+i{
+    translate: 0 20px ;  
+    background-color: rgb(0, 109, 128); 
+    color: white ; 
+    padding: 5px ; 
+    border-radius: 50% ;
+    animation: icon 1s  forwards ;
+}
+@keyframes ahmed {
+    0%{
+        width: 0px;
+    } 
+    100%{
+        width: 100% ;
+    }
+} 
+
+
+@keyframes logo {
+    0%{
+        scale: 0;
+    } 
+    100%{
+       scale: 1 ;
+    }
+}  
+
+
+
+@keyframes text {
+    0%{
+        opacity: 0;
+        translate: 0 20px ;
+    } 
+    100%{
+       opacity: 1;
+       translate: 0 10px ;
+    }
+}  
+
+
+
+@keyframes icon {
+    0%{
+        opacity: 0;
+        translate: 0 20px ;
+    } 
+    100%{
+       opacity: 1;
+       translate: 0 10px ;
+    }
+}  
+
